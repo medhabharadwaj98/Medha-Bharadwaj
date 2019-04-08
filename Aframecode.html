@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+<img  id="texture" src= "https://i.imgur.com/ep1wr73.jpg" >
+<img  id="texture1" src= "https://i.imgur.com/xd6tMi3.jpg" >
+</a-assets> 
+<a-camera position="0 0 0">
+	<a-plane position="0 0 -7" scale="3 3 3" height="3" width= "3" src="#texture1" visible= false >
+		<a-animation attribute= "visible" from="false"  to="true" delay = 500 dur= 500 repeat="indefinite"></a-animation>
+	</a-plane>
+
+	<a-plane position="0 0 -7" scale="3 3 3" height="3" width= "3" src="#texture" visible=true>
+		<a-animation attribute= "visible" from="true"  to="false" delay = 500 dur= 500 repeat="indefinite"></a-animation>
+	</a-plane>
+
+</a-camera>
+</a-scene>
+</body>
+</html>
